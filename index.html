@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="stylesheet" href="css/style.css" />
+        <link
+            rel="shortcut icon"
+            href="./images/favicon.png"
+            type="image/x-icon"
+        />
+        <title>Is Your Birthday Lucky?</title>
+        <script
+            src="https://kit.fontawesome.com/0c3127d83e.js"
+            crossorigin="anonymous"
+        ></script>
+    </head>
+    <body>
+        <main>
+            <header><h1>Is Your Birthday Lucky?</h1></header>
+            <div class="container">
+                <section class="input">
+                    <h3>
+                        Enter Your Birthdate and lucky number to continue...
+                    </h3>
+                    <label for="birthday">Select your Birth date:</label>
+                    <input type="date" name="birthday" id="birthday" required />
+                    <label for="luckyNo">Enter your Lucky Number: </label>
+                    <input type="number" name="luckyNo" id="luckyNo" required />
+                    <button type="submit" class="btn">Check</button>
+                </section>
+                <section class="output">
+                    <div class="message">
+                        Privacy Notice! We are not storing your data.
+                        <span class="close">×</span>
+                    </div>
+                    <img id="luckyImg" src="./images/lucky.gif" />
+                    <img id="unluckyImg" src="./images/unlucky.gif" />
+                </section>
+            </div>
+            <footer>
+                <div class="social">
+                    <a
+                        href="https://www.linkedin.com/in/dubey-aman/"
+                        target="_blank"
+                    >
+                        <i class="fab fa-linkedin"></i
+                    ></a>
+                    <a
+                        href="https://www.instagram.com/iamamandubey/"
+                        target="_blank"
+                        ><i class="fab fa-instagram-square"></i
+                    ></a>
+                    <a href="https://www.github.com/aman-can" target="_blank"
+                        ><i class="fab fa-github-square"></i
+                    ></a>
+                    <a href="https://aman-dubey.netlify.app/" target="_blank"
+                        ><i class="fas fa-envelope-square"></i
+                    ></a>
+                </div>
+            </footer>
+        </main>
+    </body>
+    <script src="./js/main.js"></script>
+</html>

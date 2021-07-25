@@ -1,0 +1,121 @@
+* {
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+    user-select: none;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    --dark-color: #0f5d29;
+    --mid-color: #4f9d69;
+    --light-color: #68d89b;
+    --red-color: #ed6a5a;
+    --radius: 20px;
+    color: var(--dark-color);
+}
+
+body {
+    text-align: center;
+    background: var(--light-color);
+}
+
+main {
+    max-width: 1200px;
+    margin: 0px auto;
+}
+
+header > h1 {
+    margin: 50px 0;
+}
+
+.container,
+.social {
+    background: #ffffff;
+    border-radius: var(--radius);
+    border: 1px solid var(--mid-color);
+    box-shadow: 0px 1px 50px 8px var(--mid-color);
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    align-items: center;
+}
+.social {
+    margin-top: 150px;
+}
+.social a {
+    font-size: xx-large;
+    padding: 10px;
+    margin: 10px;
+}
+.input {
+    width: 50%;
+}
+
+.input h3 {
+    margin: 30px;
+}
+
+.input > * {
+    display: block;
+    margin: 30px auto;
+}
+
+.input input {
+    border: 1px solid var(--light-color);
+    border-radius: var(--radius);
+    width: 300px;
+    padding: 10px;
+}
+
+.input input:focus-visible {
+    outline: none;
+    border: 1px solid var(--dark-color);
+}
+
+.input .btn {
+    padding: 10px 30px;
+    cursor: pointer;
+    background: var(--mid-color);
+    color: #ffffff;
+    border-radius: var(--radius);
+    border: none;
+}
+
+.input .btn:active {
+    background: var(--light-color);
+}
+.output {
+    width: 50%;
+}
+.output > img {
+    width: 200px;
+    display: none;
+}
+
+.output > .message {
+    border: 2px solid var(--red-color);
+    border-radius: var(--radius);
+    margin: 20px;
+    padding: 20px;
+}
+
+.output .close {
+    font-weight: 900;
+    cursor: pointer;
+    float: right;
+    width: 30px;
+    height: 30px;
+}
+
+@media (max-width: 1024px) {
+    .container {
+        flex-direction: column;
+        margin: 20px;
+    }
+    .input input {
+        max-width: 200px;
+    }
+
+    .input,
+    .output {
+        width: unset;
+    }
+}
